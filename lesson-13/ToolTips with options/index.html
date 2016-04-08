@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 3 JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container" style="margin-top: 100px;">
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="Description">Tooltip</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="Description 2" data-delay="500" data-trigger="hover">Tooltip</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip({
+        animation: false,
+        delay: 3000,
+        placement: 'right',
+        title: 'Description if no title',
+        trigger: 'click'
+      });
+    })
+  </script>
+
+</body>
+</html>
